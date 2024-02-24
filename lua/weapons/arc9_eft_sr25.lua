@@ -741,7 +741,7 @@ SWEP.Animations = {
         EventTable = rst_look,
         IKTimeLine = rik_look
     },
-    ["inspect1_empty"] = {
+    ["inspect_empty1"] = {
         Source = "inspect0_empty",
         MinProgress = 0.85,
         FireASAP = true,
