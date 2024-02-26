@@ -791,3 +791,32 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_kac_steel_762x51_20.mdl
 
 
 ARC9.LoadAttachment(ATT, "eft_ar10_mag_kac20")
+
+///////////////////////////////////////      eft_ar10_mag_pmag20
+
+
+ATT = {}
+
+ATT.PrintName = "AR-10 7.62x51 Magpul PMAG 20 SR-LR GEN M3 20-round magazine"
+ATT.CompactName = "PMAG 20"
+ATT.Icon = Material("entities/eft_ar10_attachments/magpmag.png", "mips smooth")
+ATT.Description = [[A 20-round double-stack Magpul PMAG SR/LR GEN M3 20 magazine for 7.62x51 NATO ammunition.]]
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.MalfunctionMeanShotsToFailMult = 0.98
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_ar10_mag"}
+
+ATT.ClipSize = 20
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_magpul_pmag_sr_gen_3_762x51_20.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_magpul_pmag_sr_gen_3_762x51_20.mdl"
+
+
+ARC9.LoadAttachment(ATT, "eft_ar10_mag_pmag20")
