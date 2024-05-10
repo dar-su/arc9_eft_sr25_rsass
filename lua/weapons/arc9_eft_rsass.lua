@@ -951,7 +951,7 @@ SWEP.missingpartsnotifsent = 0
 function SWEP:HookP_BlockFire()
     if  !self:GetValue("HasGrip") or 
         !self:GetValue("HasHG") or
-        !self:GetValue("HasStock") or
+        !self:GetValue("HasBufferTube") or
         !self:GetValue("HasBarrel") or
         !self:GetValue("HasGas") or
         !self:GetValue("HasAmmoooooooo") then
@@ -968,7 +968,7 @@ end
 function SWEP:Hook_RedPrintName()
     if  !self:GetValue("HasGrip") or 
         !self:GetValue("HasHG") or
-        !self:GetValue("HasStock") or
+        !self:GetValue("HasBufferTube") or
         !self:GetValue("HasBarrel") or
         !self:GetValue("HasGas") or
         !self:GetValue("HasAmmoooooooo") then
