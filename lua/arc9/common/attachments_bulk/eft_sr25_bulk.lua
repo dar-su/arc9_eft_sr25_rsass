@@ -29,7 +29,8 @@ ATT.Attachments = {
     {
         PrintName = "Gas block",
         Category = "eft_ar10_gas",
-        Pos = Vector(-9.705, 0, 0.12),
+        -- Pos = Vector(-9.705, 0, 0.12),
+        Pos = Vector(-9.25, 0, 0.12),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
