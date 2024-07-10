@@ -3,7 +3,8 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+-- SWEP.SubCategory = "_Not for your eyesss"
 SWEP.Credits = { 
     [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
     [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
@@ -11,26 +12,26 @@ SWEP.Credits = {
     [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
 }
 
-SWEP.PrintName = "Remington R11 RSASS"
+SWEP.PrintName = "Mk47 Mutant"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_marks")
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "	Remington Arms Company, LLC",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x51mm NATO",
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "CMMG Inc.",
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x39mm",
     [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
     [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_usa"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2010"
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2014"
 }
 
-SWEP.Description = [[The Remington Semi Automatic Sniper System is the culmination of a joint effort between Remington Arms and JP Enterprises to develop a highly accurate and superbly built rapid firing sniper rifle. This weapon delivers sub-MOA accuracy out to 800 meters and beyond while providing the tactical advantage of a semi-automatic platform.]]
+SWEP.Description = [[CMMG Mk47 Mutant, an American-made carbine chambered in 7.62x39mm, manufactured by CMMG Inc. Works with all types of AK magazines, including steel, polymer and drums. The carbine has shown exceptional reliability, which, together with the classic ergonomics of the AR system, gives an excellent example of a firearm. This variant features a fully automatic firing mode, for Law Enforcement and Millitary use only.]]
 
 SWEP.StandardPresets = {
-    "[Kiowa]XQAAAQCXAgAAAAAAAAA9iIIiM7tuo1AtT00OeFDsU2rlYJ15CM1DibfCSJIXwR66+PligrtWH0u6TbZzqJHLqKEMHvIyfG9D2GFiLlGR3GHslyv/jjLv/8dFD756b4ObZGqevv94rKq6531gpVMri5ATAkyqQrav843oY5TRI3NeJaNhm8goBg61byoUUSu7NQX+1C0cJox2IcMkltWR8c98+N+epMXm9QnpXjC8RiXYR8IcD5NnbN1pCpvZgjzSyDAUkgOgeQF0US6rkdll2sgzZYDyuq6pj0b4tFHifx/Syb2GFLJyZyuHPB3P56ezgW/TyG+L4Y09NtTQ2PwKyz2eJybIszrU//i7CQ=="
+    "[Mace]XQAAAQBsAwAAAAAAAAA9iIIiM7tuo1AtT00OeFDsU2rlYJ15CM1DLlgHUIIdw3uRL6Xe7fl4fShtmlFhOymfhgIb0Coaf3tkm/DVqzAK0ALNzCQqwoAqiE22B5Nmqrj0sUcnVSRxSZcaGDeheedDbEYnRu3WeMRWoKaJR0XIgBgBShfEIvxyLBXCiH89s/ft4ejFHjceq4V1fSynzVx+LJgSFilI0WERnUPKHwBpVzczam1Ko2rztHfJwGksiIXSSAzlVzDZ6qvOR6NKvqJiUvzLyszDwFp0ygXdt7w5ips3Z8TVRmsMU8QrhEd8MJABK2cRiMC+ThDTFfdyio9paJS0VHjYXTSDuWEXdJpScMkaeoazmMzBqTRl7opibVq8ZYF5/j1fzjoQNkhw/Q7qt6maPZ3EQDLrevQp8pn2BXTLxUuCcR1CY59SNHBCNOyLD/yc1QA="
 }
-    
-SWEP.Slot = 3
+
+SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_rsass.mdl"
+SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_mk47.mdl"
 SWEP.ViewModelFOVBase = 62
 SWEP.MirrorVMWM = true
 SWEP.DefaultBodygroups = "0000000000000"
@@ -39,51 +40,52 @@ SWEP.BarrelLength = 50
 ------------------------- [[[           STATS            ]]] -------------------------
 
 --          Damage
+-- default ps
+SWEP.DamageMax = 57/2
+SWEP.DamageMin = 38.1/2
+SWEP.PhysBulletMuzzleVelocity = 700 /0.0254
 
-SWEP.DamageMax = 88
-SWEP.DamageMin = 60
-SWEP.PhysBulletMuzzleVelocity = 840 /0.0254
 SWEP.RangeMin = 10
 SWEP.RangeMax = 1000 /0.0254
 
-SWEP.Penetration =      31 *2.54/100/0.0254
-SWEP.PenetrationDelta = 33/100
-SWEP.ArmorPiercing =    33/100
-SWEP.RicochetChance =   20/100
+SWEP.Penetration =      35 *2.54/100/0.0254
+SWEP.PenetrationDelta = 52/100
+SWEP.ArmorPiercing =    52/100
+SWEP.RicochetChance =   35/100
 
 SWEP.DamageLookupTable = {
     {   10/0.0254, 
-    88     },
+    57/2     },
 
     {   100 /0.0254, 
-    84     },
+    52.8/2     },
 
     {   200 /0.0254, 
-    80.2     },
+    48.5/2     },
 
     {   300 /0.0254, 
-    76.6     },
+    44.72/2     },
 
     {   400 /0.0254, 
-    73     },
+    42.7/2     },
 
     {   500 /0.0254, 
-    69     },
+    41.45/2     },
 
     {   600 /0.0254, 
-    65.5     },
+    40.53/2     },
 
     {   700 /0.0254, 
-    63.4     },
+    39.8/2     },
 
     {   800 /0.0254, 
-    62     },
+    39.15/2     },
 
     {   900 /0.0254, 
-    60.8     },
+    38.6/2     },
 
     {   1000 /0.0254, 
-    60     },
+    38.1/2     },
 }
 
 
@@ -97,22 +99,22 @@ SWEP.SpreadAddMove = 0.015
 --          Recoil
 -- touch these
 
-SWEP.Recoil = 1.0 -- general multiplier of main recoil
+SWEP.Recoil = 1 -- general multiplier of main recoil
 
-SWEP.RecoilUp   = 3.0  -- up recoil
+SWEP.RecoilUp   = 5   -- up recoil
 SWEP.RecoilSide = 1.1 -- sideways recoil
 SWEP.RecoilRandomUp   = 0.5 -- random up/down
-SWEP.RecoilRandomSide = 1.0   -- random left/right
+SWEP.RecoilRandomSide = 1   -- random left/right
 
-SWEP.RecoilAutoControl = 3.2 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 4.0 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 1.0 -- general multiplier for it
+SWEP.VisualRecoil = 1 -- general multiplier for it
 
-local EFT_VisualRecoilUp_BURST_SEMI   = 0.1   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 0.75   --   when fullautoing
+local EFT_VisualRecoilUp_BURST_SEMI   = 0.03   -- up/down tilt when semi/bursts
+SWEP.VisualRecoilUp                   = 0.5   --   when fullautoing
 local EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.05   --   when fullautoing
+SWEP.VisualRecoilSide                 = 0.1   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
 SWEP.VisualRecoilPunch = 2 -- How far back visrec moves the gun
@@ -123,13 +125,13 @@ SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun 
 SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
 
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = 0.3 -- same but in sights
+SWEP.VisualRecoilPositionBumpUp = 0.05 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
 SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
 local EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 0.5 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 0.75 -- camera roll each shot + makes camera go more up when fullautoing
 
 -- dont touch this i guess
 
@@ -170,6 +172,7 @@ end
 SWEP.RecoilKickAffectPitch = true
 SWEP.RecoilKickDamping = 10
 
+
 --          Heating
 
 SWEP.Malfunction = true 
@@ -185,9 +188,10 @@ SWEP.HeatLockout = false
 
 --          Firemodes
 
-SWEP.RPM = 450
+SWEP.RPM = 650
 -- SWEP.Firemodes = { { Mode = -1 }, { Mode = 1 } } -- auto, semi
 SWEP.Firemodes = {
+    { Mode = -1, PoseParam = 2},
     { Mode = 1, PoseParam = 1 }
 }
 
@@ -268,7 +272,7 @@ SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 28, 5)
+SWEP.CustomizePos = Vector(17, 26, 5)
 SWEP.CustomizeSnapshotFOV = 95
 SWEP.CustomizeRotateAnchor = Vector(16, -4.28, -5.23)
 
@@ -304,7 +308,7 @@ SWEP.CamQCA_Mult_ADS = 0.05
 SWEP.MuzzleParticle = "muzzleflash_ak47"
 
 SWEP.CaseEffectQCA = 2
-SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x51.mdl"
+SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x39.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellVelocity = 1
 SWEP.ShellCorrectAng = Angle(0, 180, 180)
@@ -338,34 +342,37 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 
 ------------------------- [[[           Sounds            ]]] -------------------------
 
-local path = "weapons/darsu_eft/sr25/"
-local path2 = "weapons/darsu_eft/rsass/"
+local path = "weapons/darsu_eft/mk47/"
 
 SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
+SWEP.ShootSound = { path .. "fire_new/mutant_outdoor_close1.ogg", path .. "fire_new/mutant_outdoor_close2.ogg", path .. "fire_new/mutant_outdoor_close3.ogg", path .. "fire_new/mutant_outdoor_close4.ogg" }
+SWEP.LayerSound = path .. "fire_new/mutant_outdoor_closetail.ogg"
 
-SWEP.ShootSound = path2 .. "rsass_fire_close5.ogg"
-SWEP.ShootSoundIndoor = path2 .. "rsass_fire_indoor_close.ogg"
-SWEP.DistantShootSound = path2 .. "rsass_fire_distant1.ogg"
-SWEP.DistantShootSoundIndoor = path2 .. "rsass_fire_indoor_distant.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/mutant_outdoor_silenced_close1.ogg", path .. "fire_new/mutant_outdoor_silenced_close2.ogg", path .. "fire_new/mutant_outdoor_silenced_close3.ogg", path .. "fire_new/mutant_outdoor_silenced_close4.ogg" }
+SWEP.LayerSoundSilenced = path .. "fire_new/mutant_outdoor_silenced_closetail.ogg"
 
-SWEP.ShootSoundSilenced = path2 .. "rsass_close_silenced1.ogg"
-SWEP.ShootSoundSilencedIndoor = path2 .. "rsass_indoor_close_silenced1.ogg"
-SWEP.DistantShootSoundSilenced = path2 .. "rsass_distant_silenced1.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path2 .. "rsass_indoor_distant_silenced1.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/mutant_indoor_close1.ogg", path .. "fire_new/mutant_indoor_close2.ogg", path .. "fire_new/mutant_indoor_close3.ogg", path .. "fire_new/mutant_indoor_close4.ogg" }
+SWEP.LayerSoundIndoor = path .. "fire_new/mutant_indoor_closetail.ogg"
+
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mutant_indoor_silenced_close1.ogg", path .. "fire_new/mutant_indoor_silenced_close2.ogg", path .. "fire_new/mutant_indoor_silenced_close3.ogg", path .. "fire_new/mutant_indoor_silenced_close4.ogg" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mutant_indoor_silenced_closetail.ogg"
+
+SWEP.DistantShootSound = { path .. "fire_new/mutant_outdoor_distant1.ogg", path .. "fire_new/mutant_outdoor_distant2.ogg" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/mutant_outdoor_silenced_distant1.ogg", path .. "fire_new/mutant_outdoor_silenced_distant2.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/mutant_indoor_distant1.ogg", path .. "fire_new/mutant_indoor_distant2.ogg" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mutant_indoor_silenced_distant1.ogg", path .. "fire_new/mutant_indoor_silenced_distant2.ogg" }
+
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = "" -- we will have own in sound tables
 SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
-SWEP.EnterSightsSound = ARC9EFT.ADSRifle
-SWEP.ExitSightsSound = ARC9EFT.ADSRifleOut
-
-
-SWEP.SuppressEmptySuffix = true 
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.ogg"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.ogg"
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
 -- -- Anti integrated zeroing
@@ -391,11 +398,20 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local mag = ""
     local nomag = false 
 
-    if elements["eft_ar10_mag_pmag20"] then mag = "_0"
-    elseif elements["eft_ar10_mag_kac10"] then mag = "_1"
-    elseif elements["eft_ar10_mag_kac20"] or elements["eft_ar10_mag_l7_20"] or elements["eft_ar10_mag_l7_25"] then mag = "_2"
-    else nomag = true end
+    if elements["762"] then mag = "_762"
+    elseif elements["10rnd"] then mag = "_10rnd"
+    elseif elements["long762"] then mag = "_762"
+    elseif elements["bigdrum"] then mag = "_drum"
+
+    elseif elements["545"] then mag = "_762" -- in case of someone adding 545 mag compat
+    elseif elements["556"] then mag = "_762"
+    elseif elements["60rnd"] then mag = "_drum"
+    elseif elements["long545"] then mag = "_762"
+    elseif elements["smalldrum"] then mag = "_drum"
     
+    else nomag = true end
+
+
     local empty = swep:Clip1() == 0
 
     -- 0 looking
@@ -403,8 +419,6 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- 2 slide checking  (!empty)
     
     if anim == "inspect" then
-        if empty then anim = "inspect_empty" end
-
         swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
         local rand = swep.EFTInspectnum
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
@@ -469,236 +483,192 @@ local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.ogg","arc9_eft_shared/ge
 local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/generic_mag_pouch_out2.ogg","arc9_eft_shared/generic_mag_pouch_out3.ogg","arc9_eft_shared/generic_mag_pouch_out4.ogg","arc9_eft_shared/generic_mag_pouch_out5.ogg","arc9_eft_shared/generic_mag_pouch_out6.ogg","arc9_eft_shared/generic_mag_pouch_out7.ogg"}
 
 local rst_magcheck = {
-    { s = randspin, t = 0.1 },
-    { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.43 },
-    { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.58 },
-    { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 2.13 },
-    { s = randspin, t = 2.52 },
+    { s = randspin, t = 0.2 },
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.52 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.63 },
+    { s = path .. "ppsh_mag_pullout1.ogg", t = 2.04 },
+    { s = path .. "akm_magin_metal.ogg", t = 2.68 },
+    { s = randspin, t = 3.43 },
 }
 
 local rst_chamber = {
-    { s = randspin, t = 0.07 },
-    { s = randspin, t = 0.5 },
-    { s = path2 .. "p90_bolt_handle_grab.ogg", t = 0.75 },
-    { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 0.95},
-    { s = randspin, t = 1.99 },
-    { s = "arc9_eft_shared/weap_bolt_handle_in.ogg", t = 2},
-    { s = randspin, t = 2.4 },
+    { s = randspin, t = 0.1 },
+    { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 0.71},
+    { s = "arc9_eft_shared/weap_bolt_handle_in.ogg", t = 1.51},
+    { s = randspin, t = 2.1 },
 }
 local rst_reload = {
-    { s = randspin, t = 0.1 },
-    { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.44 },
-    { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.6 },
-    { s = pouchin, t = 0.98 },
-    { s = pouchout, t = 1.33 },
-    { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.9 },
-    { s = randspin, t = 2.3 },
+    { s = randspin, t = 0.11 },
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.5 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.62 },
+    { s = pouchin, t = 1.16 },
+    { s = pouchout, t = 1.4 },
+    { s = path .. "akm_magin_metal.ogg", t = 2.03 },
+    { s = randspin, t = 2.45 },
 }
-local rst_reload10 = {
-    { s = randspin, t = 0.1 },
-    { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.44 },
-    { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.56 },
-    { s = pouchin, t = 0.91 },
-    { s = pouchout, t = 1.06 },
-    { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.8 },
-    { s = randspin, t = 2.19 },
+local rst_reloaddrum = {
+    { s = randspin, t = 0.11 },
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.51 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.65 },
+    { s = pouchin, t = 1.18 },
+    { s = pouchout, t = 1.72 },
+    { s = path .. "akm_magin_metal.ogg", t = 2.45 },
+    { s = randspin, t = 2.99 },
 }
 
 local rst_reloadempty = {
-    { s = randspin, t = 0.06 },
-    { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.22 },
-    { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.37 },
-    { s = randspin, t = 0.72 },
-    { s = pouchout, t = 0.89 },
-    { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.48 },
-    { s = randspin, t = 1.81 },
-    { s = "arc9_eft_shared/weap_bolt_catch_button.ogg", t = 2.19 },
-    { s = "arc9_eft_shared/weap_bolt_in_fast.ogg", t = 2.27 },
-    { s = randspin, t = 2.54 },
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.32 },
+    { s = randspin, t = 0.38 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.45 },
+    { s = randspin, t = 0.81 },
+    { s = pouchout, t = 1.1 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72 },
+    { s = randspin, t = 2.09 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3 },
+    { s = randspin, t = 3.29 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
-    {hide = 0, t = 1}
+    {hide = 0, t = 1.05}
 }
 
-local rst_reloadempty10 = {
-    { s = randspin, t = 0.06 },
-    { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.22 },
-    { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.37 },
-    { s = randspin, t = 0.64 },
-    { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.43 },
-    { s = randspin, t = 1.77     },
-    { s = "arc9_eft_shared/weap_bolt_catch_button.ogg", t = 2.12 },
-    { s = "arc9_eft_shared/weap_bolt_in_fast.ogg", t = 2.24 },
-    { s = randspin, t = 2.53 },
+local rst_reloademptydrum = {
+    { s = path .. "mutant_magrelease_button.ogg", t = 0.32 },
+    { s = randspin, t = 0.38 },
+    { s = path .. "akm_magout_metal.ogg", t = 0.45 },
+    { s = randspin, t = 0.81 },
+    { s = pouchout, t = 1.1+0.32 },
+    { s = path .. "akm_magin_metal.ogg", t = 1.72+0.4 },
+    { s = randspin, t = 2.09+0.4 },
+    { s = path .. "p90_bolt_handle_grab.ogg", t = 2.64+0.4 },
+    { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.78+0.4 },
+    { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3+0.4 },
+    { s = randspin, t = 3.29+0.4 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
-    {hide = 0, t = 1}
+    {hide = 0, t = 1.3}
 }
 
 local rst_look = {
-    { s = randspin, t = 0.09 },
-    { s = randspin, t = 1.45 },
-    { s = randspin, t = 2.84 },
+    { s = randspin, t = 0.19 },
+    { s = randspin, t = 1.47 },
+    { s = randspin, t = 2.92 },
 }
 local rik_look = {
     { t = 0, lhik = 1 },
     { t = 0.4, lhik = 1 },
-    { t = 0.62, lhik = 0 },
-    { t = 0.83, lhik = 0 },
-    { t = 0.97, lhik = 1 },
+    { t = 0.57, lhik = 0 },
+    { t = 0.85, lhik = 0 },
+    { t = 0.98, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 local rik_cham = {
     { t = 0, lhik = 1 },
-    { t = 0.18, lhik = 0 },
-    { t = 0.78, lhik = 0 },
+    { t = 0.1, lhik = 0 },
+    { t = 0.8, lhik = 0 },
     { t = 0.95, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 local rik_mag = {
     { t = 0, lhik = 1 },
-    { t = 0.1, lhik = 0 },
-    { t = 0.82, lhik = 0 },
-    { t = 0.91, lhik = 1 },
+    { t = 0.11, lhik = 0 },
+    { t = 0.9, lhik = 0 },
     { t = 1, lhik = 1 },
 }
 
 local rik_reload = {
     { t = 0, lhik = 1 },
     { t = 0.1, lhik = 0 },
-    { t = 0.88, lhik = 0 },
+    { t = 0.91, lhik = 0 },
     { t = 1, lhik = 1 },
 }
-
 local rik_reloadempty = {
     { t = 0, lhik = 1 },
-    { t = 0.08, lhik = 0 },
-    { t = 0.85, lhik = 0 },
-    { t = 1, lhik = 1 },
-}
-local rik_reloadempty2 = {
-    { t = 0, lhik = 1 },
-    { t = 0.1, lhik = 0 },
-    { t = 0.88, lhik = 0 },
+    { t = 0.14, lhik = 1 },
+    { t = 0.22, lhik = 0 },
+    { t = 0.59, lhik = 0 },
+    { t = 0.67, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
 SWEP.Animations = {
-    ["idle"] = { 
-        Source = "idle", 
-        Time = 100,       -- REMOVE TIME !!!!!!!! 
-        RareSource = {"too_idle0", "too_idle1", "too_idle2"},
-        RareSourceChance = 0.0001,
-    },
-
-    ["idle_empty"] = { 
-        Source = "idle_empty", 
-        RareSource = {"too_idle0_empty", "too_idle1_empty", "too_idle2_empty"},
-        RareSourceChance = 0.0001,
-    },
+    ["idle"] = { Source = "idle", Time = 100, }, -- REMOVE TIME !!!!!!!!
 
     ["ready"] = {
-        Source = {"ready0", "ready1", "ready2"},
+        Source = {"ready0", "ready1"},
         EventTable = {
             { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
-            { s = path2 .. "p90_bolt_handle_grab.ogg", t = 0.62 },
-            { s = path2 .. "rsass_bolt_out.ogg", t = 0.7 },
-            { s = path2 .. "rsass_bolt_in.ogg", t = 0.91 },
-            { s = randspin, t = 1.13 },   
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 0.75 },
+            { s = path .. "mutant_bolt_na_tebya.ogg", t = 0.88 },
+            { s = path .. "mutant_bolt_ot_tebya.ogg", t = 1.13 },
+            { s = randspin, t = 1.57 },   
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.001, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.87, lhik = 1 },
+            { t = 0.72, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         }
     },
 
     ["draw"] = { Source = "draw", EventTable = { { s = "arc9_eft_shared/weap_in.ogg", t = 0.05 } } },
     ["holster"] = { Source = "holster", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0.05 } } },
-    ["draw_empty"] = { Source = "draw_empty", EventTable = { { s = "arc9_eft_shared/weap_in.ogg", t = 0.05 } } },
-    ["holster_empty"] = { Source = "holster_empty", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0.05 } } },
 
 
     ["fire"] = { Source = "fire", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
     ["fire_dry"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_empty"] = { Source = "fire_empty", NoIdle = true, EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
-    ["fire_dry_empty"] = { Source = "fire_dry_empty", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 } } },
 
-    ["reload_0"] = {
-        Source = "reload0",
+    ["reload_762"] = {
+        Source = "reload_762",
         MinProgress = 0.85,
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
-    ["reload_empty_0"] = {
-        Source = "reload_empty0_0",
+    ["reload_empty_762"] = {
+        Source = "reload_empty_762",
         MinProgress = 0.85,
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = rst_reloadempty,
         IKTimeLine = rik_reloadempty
     },
-    ["1_reload_empty_0"] = { -- seperate cuz differeitn lhik
-        Source = "reload_empty0_1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.5,
-        EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty2
-    },
     
-    ["reload_1"] = {
-        Source = "reload1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.5,
-        EventTable = rst_reload10,
-        IKTimeLine = rik_reload
-    },
-    ["reload_empty_1"] = {
-        Source = "reload_empty1_0",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.5,
-        EventTable = rst_reloadempty10,
-        IKTimeLine = rik_reloadempty
-    },
-    ["1_reload_empty_1"] = {
-        Source = "reload_empty1_1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        MagSwapTime = 1.5,
-        EventTable = rst_reloadempty10,
-        IKTimeLine = rik_reloadempty2
-    },
-    
-    ["reload_2"] = {
-        Source = "reload2",
+    ["reload_10rnd"] = {
+        Source = "reload_10rnd",
         MinProgress = 0.85,
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = rst_reload,
         IKTimeLine = rik_reload
     },
-    ["reload_empty_2"] = {
-        Source = "reload_empty2_0",
+    ["reload_empty_10rnd"] = {
+        Source = "reload_empty_10rnd",
         MinProgress = 0.85,
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = rst_reloadempty,
         IKTimeLine = rik_reloadempty
     },
-    ["1_reload_empty_2"] = {
-        Source = "reload_empty2_1",
+    
+    ["reload_drum"] = {
+        Source = "reload_drum",
         MinProgress = 0.85,
         FireASAP = true,
         MagSwapTime = 1.5,
-        EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty2
+        EventTable = rst_reloaddrum,
+        IKTimeLine = rik_reload
+    },
+    ["reload_empty_drum"] = {
+        Source = "reload_empty_drum",
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = rst_reloademptydrum,
+        IKTimeLine = rik_reloadempty
     },
 
 
@@ -709,27 +679,19 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 1.5,
         EventTable = {
-            { s = randspin, t = 0.1 },
-            { s = path2 .. "rsass_bolt_out.ogg", t = 0.83 },
-            { s = path2 .. "rsass_bolt_in.ogg", t = 1.2 },
-            { s = randspin, t = 1.35 },
-            { s = randspin, t = 1.95 },
-            { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 2.55 },
-            { s = path2 .. "generic_jam_shell_ remove_heavy1.ogg", t = 3.17 },
-            { s = randspin, t = 3.81 },
-            { s = "arc9_eft_shared/weap_bolt_catch_button.ogg", t = 4.62 },
-            { s = "arc9_eft_shared/weap_bolt_in_fast.ogg", t = 4.65 },
-            { s = randspin, t = 4.98 },
-            { s = randspin, t = 5.32 },
+            { s = randspin, t = 0.1 },   
+            { s = path .. "mutant_bolt_na_tebya.ogg", t = 0.8 },
+            { s = randspin, t = 1.43 },   
+            { s = path .. "ammo_singleround_pickup.ogg", t = 1.84 },
+            { s = path .. "generic_jam_shell_ remove_heavy1.ogg", t = 2.42 },
+            { s = randspin, t = 3.12 },   
+            { s = path .. "mutant_bolt_ot_tebya.ogg", t = 3.35 },
+            { s = randspin, t = 3.9 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.09, lhik = 0 },
-            { t = 0.24, lhik = 0 },
-            { t = 0.3, lhik = 1 },
-            { t = 0.7, lhik = 1 },
-            { t = 0.79, lhik = 0 },
-            { t = 0.94, lhik = 0 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.88, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },    
@@ -743,51 +705,23 @@ SWEP.Animations = {
         EventTable = rst_look,
         IKTimeLine = rik_look
     },
-    ["inspect1_empty"] = {
-        Source = "inspect0_empty",
-        MinProgress = 0.85,
-        FireASAP = true,
-        EventTable = rst_look,
-        IKTimeLine = rik_look
-    },
 
-    ["inspect2_0"] = {
-        Source = "inspect10",
+    ["inspect2_762"] = {
+        Source = "inspect1_762",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_magcheck,
         IKTimeLine = rik_mag
     },
-    ["inspect2_1"] = {
-        Source = "inspect11",
+    ["inspect2_10rnd"] = {
+        Source = "inspect1_10rnd",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_magcheck,
         IKTimeLine = rik_mag
     },
-    ["inspect2_2"] = {
-        Source = "inspect12",
-        MinProgress = 0.85,
-        FireASAP = true,
-        EventTable = rst_magcheck,
-        IKTimeLine = rik_mag
-    },
-    ["inspect_empty2_0"] = {
-        Source = "inspect10_empty",
-        MinProgress = 0.85,
-        FireASAP = true,
-        EventTable = rst_magcheck,
-        IKTimeLine = rik_mag
-    },
-    ["inspect_empty2_1"] = {
-        Source = "inspect11_empty",
-        MinProgress = 0.85,
-        FireASAP = true,
-        EventTable = rst_magcheck,
-        IKTimeLine = rik_mag
-    },
-    ["inspect_empty2_2"] = {
-        Source = "inspect12_empty",
+    ["inspect2_drum"] = {
+        Source = "inspect1_drum",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_magcheck,
@@ -802,19 +736,8 @@ SWEP.Animations = {
         IKTimeLine = rik_cham
     },
 
-    ["inspect_empty0"] = {
-        Source = "inspect2_empty",
-        MinProgress = 0.85,
-        FireASAP = true,
-        EventTable = rst_chamber,
-        IKTimeLine = rik_cham
-    },
-
     ["toggle"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 } } },
     ["switchsights"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 } } },
-
-    ["toggle_empty"] = { Source = "mod_switch_empty", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 } } },
-    ["switchsights_empty"] = { Source = "mod_switch_empty", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 } } },
 
 
     ["jam0"] = {
@@ -822,70 +745,46 @@ SWEP.Animations = {
         Source = "misfire0", -- jam misfire
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = randspin, t = 0.8 },
-            { s = randspin, t = 0.85 },
-            { s = randspin, t = 1.35 },
-            { s = path2 .. "p90_bolt_handle_grab.ogg", t = 1.7 },
-            { s = path2 .. "rsass_bolt_out.ogg", t = 1.99 },
-            { s = path2 .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.13 },
-            { s = path2 .. "rsass_bolt_in.ogg", t = 2.29 },
-            { s = randspin, t = 2.61 },
-        },        
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.12, lhik = 0 },
-            { t = 0.26, lhik = 0 },
-            { t = 0.34, lhik = 1 },
-            { t = 0.39, lhik = 1 },
-            { t = 0.5, lhik = 0 },
-            { t = 0.73, lhik = 0 },
-            { t = 0.81, lhik = 1 },
-            { t = 1, lhik = 1 },
+            { s = randspin, t = 0.78 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 1.56 },
+            { s = path .. "mutant_bolt_na_tebya.ogg", t = 1.71 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.84 },
+            { s = path .. "mutant_bolt_ot_tebya.ogg", t = 1.96 },
+            { s = randspin, t = 2.34 },
         },
-        EjectAt = 2.13,
+        EjectAt = 1.84,
     },
     ["jam1"] = {
         Source = "jam_shell", -- jam shell
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = randspin, t = 0.81 },
-            { s = randspin, t = 1.01 },
-            { s = path2 .. "generic_jam_shell_ remove_heavy1.ogg", t = 1.76 }, 
-            { s = randspin, t = 2.6 },
+            { s = randspin, t = 0.78 },
+            { s = randspin, t = 1.17 },
+            { s = path .. "generic_jam_shell_ remove_heavy1.ogg", t = 1.79 }, 
+            { s = randspin, t = 2.97 },
         },
-        -- EjectAt = 4.7,        
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.79, lhik = 0 },
-            { t = 0.91, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
+        -- EjectAt = 4.7,
     },
     ["jam2"] = {
         Source = "jam_feed", -- jam feed
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = randspin, t = 0.8 },
-            { s = randspin, t = 0.85 },
-            
-            { s = path2 .. "p90_bolt_handle_grab.ogg", t = 1.65 },
-            { s = path2 .. "rsass_bolt_out.ogg", t = 2.29 },
-            { s = randspin, t = 2.55 },
-            { s = randspin, t = 2.74 },
-            { s = path2 .. "ak_jam_feedfault_extraction_nohand.ogg", t = 3.15 },
-            { s = path2 .. "rsass_bolt_in.ogg", t = 3.58 },
-            { s = randspin, t = 3.9 },
+            { s = randspin, t = 0.78 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 1.6 },
+            { s = path .. "mutant_bolt_na_tebya.ogg", t = 1.8 },
+            { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 2.12},
+            { s = randspin, t = 2.46 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.55 },
+            { s = path .. "mutant_bolt_ot_tebya.ogg", t = 2.84 },
+            { s = randspin, t = 3.1 },
         },
-        -- EjectAt = 2.55,
+        EjectAt = 2.55,
             IKTimeLine = {
                 { t = 0, lhik = 1 },
-                { t = 0.11, lhik = 0 },
-                { t = 0.2, lhik = 0 },
-                { t = 0.26, lhik = 1 },
-                { t = 0.34, lhik = 0 },
-                { t = 0.82, lhik = 0 },
-                { t = 0.87, lhik = 1 },
+                { t = 0.3, lhik = 1 },
+                { t = 0.4, lhik = 0 },
+                { t = 0.87, lhik = 0 },
+                { t = 0.96, lhik = 1 },
                 { t = 1, lhik = 1 },
             },
     },
@@ -893,30 +792,27 @@ SWEP.Animations = {
         Source = "jam_hard", -- jam hard
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = randspin, t = 0.8 },
-            { s = randspin, t = 0.85 },
-            { s = randspin, t = 1.36 },
-
-            { s = path2 .. "p90_bolt_handle_grab.ogg", t = 1.71 },
-            { s = path2 .. "ak_jam_stuckbolt_in1.ogg", t = 2.08 },
-            { s = path2 .. "ak_jam_stuckbolt_in2.ogg", t = 2.39 },
-            { s = path2 .. "p90_bolt_handle_grab.ogg", t = 3.05 },
-            { s = randspin, t = 3.38 },
-            { s = randspin, t = 3.01 },
-            { s = path2 .. "rsass_bolt_out.ogg", t = 4.49 },
-            { s = path2 .. "ak_jam_feedfault_extraction_nohand.ogg", t = 4.63 },
-            { s = path2 .. "rsass_bolt_in.ogg", t = 4.82 },
-            { s = randspin, t = 5.25 },
+            { s = randspin, t = 0.78 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 1.64 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.91 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.3 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 2.77 },
+            { s = randspin, t = 3.16 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 3.93 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 4.06 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 4.55 },
+            { s = path .. "mutant_bolt_na_tebya.ogg", t = 4.92 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 5.05 },
+            { s = path .. "mutant_bolt_ot_tebya.ogg", t = 5.2 },
+            { s = randspin, t = 5.51 },
         },
-        EjectAt = 4.63,
+        EjectAt = 5.05,
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.09, lhik = 0 },
-            { t = 0.16, lhik = 0 },
-            { t = 0.21, lhik = 1 },
-            { t = 0.29, lhik = 0 },
-            { t = 0.86, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.18, lhik = 1 },
+            { t = 0.24, lhik = 0 },
+            { t = 0.51, lhik = 0 },
+            { t = 0.59, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -924,28 +820,35 @@ SWEP.Animations = {
         Source = "jam_soft", -- jam soft
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = randspin, t = 0.8 },
-            { s = randspin, t = 0.85 },
-
-            { s = path2 .. "p90_bolt_handle_grab.ogg", t = 1.65 },
-            { s = path2 .. "ak_jam_stuckbolt_in1.ogg", t = 2.07 },
-            { s = path2 .. "rsass_bolt_out.ogg", t = 2.38 },
-            { s = path2 .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.49 },
-            { s = path2 .. "rsass_bolt_in.ogg", t = 2.67 },
-            { s = randspin, t = 3.04 },
+            { s = randspin, t = 0.78 },
+            { s = path .. "p90_bolt_handle_grab.ogg", t = 1.61 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.95 },
+            { s = path .. "mutant_bolt_na_tebya.ogg", t = 2.25 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.39 },
+            { s = path .. "mutant_bolt_ot_tebya.ogg", t = 2.55 },
+            { s = randspin, t = 2.84 },
         },
-        EjectAt = 2.49,
+        EjectAt = 2.39,
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.11, lhik = 0 },
-            { t = 0.24, lhik = 0 },
-            { t = 0.32, lhik = 1 },
+            { t = 0.33, lhik = 1 },
             { t = 0.44, lhik = 0 },
-            { t = 0.77, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.82, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
+
+    ["firemode_1"] = {
+        Source = "firemode_1",
+        EventTable = { { s = "arc9_eft_shared/weap_fireselctor.ogg", t = 0.6 } }
+    },
+    ["firemode_2"] = {
+        Source = "firemode_0",
+        EventTable = { { s = "arc9_eft_shared/weap_fireselctor.ogg", t = 0.3 } }
+    },
+
+
 }
 
 
@@ -956,8 +859,9 @@ SWEP.missingpartsnotifsent = 0
 function SWEP:HookP_BlockFire()
     if  !self:GetValue("HasGrip") or 
         !self:GetValue("HasHG") or
-        !self:GetValue("HasBufferTube") or
+        !self:GetValue("HasReceiver") or
         !self:GetValue("HasBarrel") or
+        !self:GetValue("HasBufferTube") or
         !self:GetValue("HasGas") or
         !self:GetValue("HasAmmoooooooo") then
             
@@ -973,8 +877,9 @@ end
 function SWEP:Hook_RedPrintName()
     if  !self:GetValue("HasGrip") or 
         !self:GetValue("HasHG") or
-        !self:GetValue("HasBufferTube") or
+        !self:GetValue("HasReceiver") or
         !self:GetValue("HasBarrel") or
+        !self:GetValue("HasBufferTube") or
         !self:GetValue("HasGas") or
         !self:GetValue("HasAmmoooooooo") then
             return true 
@@ -982,9 +887,10 @@ function SWEP:Hook_RedPrintName()
 end
 
 SWEP.AttachmentElements = {
-    ["eft_rsass_barrel_558"] = { Bodygroups = { {1, 2} } },
-    ["eft_rsass_barrel_457"] = { Bodygroups = { {1, 1} } },
-    ["eft_rsass_black"] = { Skin = 1 },
+    ["eft_mk47_upper_std"] = { Bodygroups = { {1, 1} } },
+    ["eft_mk47_charge_std"] = { Bodygroups = { {2, 1} } },
+    ["eft_mk47_barrel_409"] = { Bodygroups = { {3, 2} } },
+    ["eft_mk47_barrel_254"] = { Bodygroups = { {3, 1} } },
 }
 
 
@@ -992,106 +898,160 @@ SWEP.Attachments = {
     {
         PrintName = "Pistol grip",
         Category = {"eft_ar15_pgrip", "eft_ar15_pgrip_m4"},
-        Installed = "eft_ar_pgrip_miad",
+        Installed = "eft_ar_pgrip_moe",
         Bone = "weapon",
-        Pos = Vector(0, 13.50, -2.05),
+        Pos = Vector(0, 11.25, -2.05),
         Ang = Angle(0, -90, 0),
     },
     {
         PrintName = "Buffer tube",
-        Category = {"eft_ar15_buffertube"},
-        RejectAttachments = { -- wawa
-            ["eft_ar_buffertube_m7a1"] = true,
-            ["eft_ar_buffertube_m7a1f"] = true,
-            ["eft_ar_buffertube_viperpdw"] = true,
-        },
+        Category = {"eft_ar15_buffertube", "eft_cmmg_buffertube"},
         Bone = "weapon",
-        Pos = Vector(0, 10.39, 0.14),
+        Pos = Vector(0, 8.77, 0.05),
         Ang = Angle(0, -90, 0),
-        Installed = "eft_ar_buffertube_a2",
+        Installed = "eft_ar_buffertube_cmmg",
         SubAttachments = {
             {
-                Installed = "eft_ar_stock_prsgen2f"
+                Installed = "eft_ar_stock_ripstop"
             }
         }
     },
     {
-        PrintName = "Barrel",
-        Category = "eft_rsass_barrel",
-        Installed = "eft_rsass_barrel_558",
+        PrintName = "Upper Receiver",
+        Category = "eft_mk47_upper",
         Bone = "weapon",
-        Pos = Vector(0, 19.543, 0.295),
+        Pos = Vector(0, 15, -0),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0.15),
+        Installed = "eft_mk47_upper_std",
+
         SubAttachments = {
             {
-                Installed = "eft_ar10_gas_jp"
+                Installed = "eft_mk47_barrel_254",
+                SubAttachments = {
+                    {
+                        Installed = "eft_ar10_gas_cmmg",
+                    },
+                    {
+                        Installed = "eft_muzzle_ar10_cmmgsv",
+                    },
+                },
             },
-            {
-                Installed = "eft_muzzle_ar10_aac51t"
+            { 
+                Installed = "eft_ar10_hg_rml9",
+                SubAttachments = {
+                    {},
+                    {},
+                    {
+                        Installed = "eft_frontsight_mbus",
+                    }
+                }
+            },
+            { 
+                Installed = "eft_rearsight_mbus",
             },
         }
     },
     {
-        PrintName = "Handguard",
-        Category = "eft_ar10_hg",
-        Installed = "eft_ar10_hg_rsass",
+        PrintName = "Charge", 
+        Category = "eft_mk47_charge",
         Bone = "weapon",
-        Pos = Vector(0, 19.543, 0.238),
+        Pos = Vector(0, 9.5, 1),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 4, 0),
-    },
-    {
-        PrintName = "Rear Sight",
-        Bone = "weapon",
-        Category = {"eft_rearsight"},
-        Pos = Vector(0, 13, 1.45),
-        Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        Installed = "eft_mk47_charge_std"
     },
-    {
-        PrintName = "Optic",
-        Bone = "weapon",
-        Category = {"eft_optic_medium", "eft_optic_small", "eft_optic_large"},
-        ExcludeElements = {"IronsBlockingSight"},
-        Pos = Vector(0, 16, 1.45),
-        Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 0),
-    },
+
     {
         PrintName = "Mag", 
-        Category = "eft_ar10_mag",
+        Category = "eft_ak_762_mag",
+        RejectAttachments = {
+            ["eft_mag_ak_x47_762_50"] = true,
+        },
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 1, -1),
-        Installed = "eft_ar10_mag_pmag20"
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -1, -1),
+        Installed = "eft_mag_ak_pmag_762_30",
+        ExcludeElements = {"eft_mk47_conversion_545", "eft_mk47_conversion_556"},
     },
     {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_76239",
+        Integral = true,
+        Installed = "eft_ammo_76239_ps",
+        Bone = "mod_magazine",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -0.5, -3),
+        ExcludeElements = {"eft_mk47_conversion_545", "eft_mk47_conversion_556"},
+    },
+
+    {
+        PrintName = "Mag", 
+        Category = "eft_ak_545_mag",
+        RejectAttachments = {
+            ["eft_mag_ak_6l31_545_60"] = true,
+        },
+        Bone = "mod_magazine",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -1, -1),
+        -- Installed = "eft_mag_ak_pmag_762_30",
+        RequireElements = {"eft_mk47_conversion_545"},
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_545",
+        Integral = true,
+        Installed = "eft_ammo_545_ps",
+        Bone = "mod_magazine",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -0.5, -3),
+        RequireElements = {"eft_mk47_conversion_545"},
+    },
+
+    {
+        PrintName = "Mag", 
+        Category = "eft_ak_556_mag",
+        -- RejectAttachments = {
+        --     ["eft_mag_ak_x47_762_50"] = true,
+        -- },
+        Bone = "mod_magazine",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -1, -1),
+        -- Installed = "eft_mag_ak_pmag_762_30",
+        RequireElements = {"eft_mk47_conversion_556"},
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_556",
+        Integral = true,
+        Installed = "eft_ammo_556_fmj",
+        Bone = "mod_magazine",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -0.5, -3),
+        RequireElements = {"eft_mk47_conversion_556"},
+    },
+
+    {
         PrintName = "Custom slot",
-        Category = {"eft_custom_slot", "eft_custom_rsass"},
+        Category = {"eft_custom_slot", "eft_custom_mk47"},
         Bone = "weapon",
         Pos = Vector(0, 4, -2),
         Ang = Angle(0, -90, 0),
         -- CosmeticOnly = true,
     },
-    {
-        PrintName = "Ammunition",
-        Category = "eft_ammo_762x51",
-        Integral = true,
-        Installed = "eft_ammo_762x51_m61",
-        Bone = "mod_magazine",
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 1, -3),
-    },
 }
 
-SWEP.EFTErgo = 50
+SWEP.EFTErgo = 42
 if ARC9EFTBASE then
     SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook or nil
     SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook or nil
-    -- SWEP.HookP_TranslateSound = ARC9EFT.ErgoAdsVolume or nil
+    SWEP.HookP_TranslateSound = ARC9EFT.ErgoAdsVolume or nil
     SWEP.SpreadHook = ARC9EFT.SpreadBonus or nil
 else
     print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
