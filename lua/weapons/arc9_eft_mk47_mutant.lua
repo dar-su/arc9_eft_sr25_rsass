@@ -863,6 +863,7 @@ function SWEP:HookP_BlockFire()
         !self:GetValue("HasBarrel") or
         !self:GetValue("HasBufferTube") or
         !self:GetValue("HasGas") or
+        !self:GetValue("HasCharge") or
         !self:GetValue("HasAmmoooooooo") then
             
             if SERVER and self.missingpartsnotifsent < CurTime() then
@@ -881,6 +882,7 @@ function SWEP:Hook_RedPrintName()
         !self:GetValue("HasBarrel") or
         !self:GetValue("HasBufferTube") or
         !self:GetValue("HasGas") or
+        !self:GetValue("HasCharge") or
         !self:GetValue("HasAmmoooooooo") then
             return true 
     end
