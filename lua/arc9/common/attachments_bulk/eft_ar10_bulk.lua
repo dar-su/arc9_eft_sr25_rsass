@@ -459,6 +459,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     }, 
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(0, 10, 1.25),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "eft_ar10_hg_sws105")
@@ -528,7 +535,7 @@ ATT.Attachments = {
     },    
     {
         PrintName = "B Tactical",
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
         Pos = Vector(0, 11.75, 1.25),
         Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0.5),
