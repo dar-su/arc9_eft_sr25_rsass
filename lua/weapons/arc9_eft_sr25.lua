@@ -432,11 +432,6 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     if anim == "fix" then
         local rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
-        
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
-        local rand = swep.EFTInspectnum
-        if rand == 5 then swep.EFTInspectnum = 0 rand = 0 end
-        
 
         -- 0 = misfire, 1 = eject, 2 = feed, 3 = bolt, 4 = bolt 
         if ARC9EFTBASE and SERVER then
