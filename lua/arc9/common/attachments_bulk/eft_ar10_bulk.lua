@@ -827,3 +827,32 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_magpul_pmag_sr_gen_3_76
 
 
 ARC9.LoadAttachment(ATT, "eft_ar10_mag_pmag20")
+
+///////////////////////////////////////      eft_ar10_mag_drum50
+
+
+ATT = {}
+
+ATT.PrintName = "AR-10 7.62x51 X Products X-25 50-round drum magazine"
+ATT.CompactName = "X-25 50"
+ATT.Icon = Material("entities/eft_ar10_attachments/magdrum.png", "mips smooth")
+ATT.Description = [[A 50-round 7.62x51 drum magazine for the AR-10 platform weapons. Manufactured by X Products.]]
+
+ATT.EFTErgoAdd = -15
+ATT.CustomCons = { Ergonomics = "-15" }
+ATT.MalfunctionMeanShotsToFailMult = 0.7
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_ar10_mag"}
+
+ATT.ClipSize = 50
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_drum_762x51_50.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_drum_762x51_50.mdl"
+
+
+ARC9.LoadAttachment(ATT, "eft_ar10_mag_drum50")
