@@ -856,7 +856,7 @@ SWEP.Animations = {
 
 ------------------------- |||           Attachments            ||| -------------------------
 
-SWEP.EFTRequiredAtts = { "HasGrip", "HasHG", "HasBufferTube", "HasReceiver", "HasGas", "HasBarrel", "HasAmmoooooooo" }
+SWEP.EFTRequiredAtts = { "HasGrip", "HasHG", "HasBufferTube", "HasReceiver", "HasGas", "HasCharge", "HasBarrel", "HasAmmoooooooo" }
 
 SWEP.AttachmentElements = {
     ["eft_sr25_upper_std"] = { Bodygroups = { {1, 1} } },

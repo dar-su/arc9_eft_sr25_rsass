@@ -822,13 +822,13 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Mag", 
+        PrintName = "Magazine", 
         Category = "eft_ak_762_mag",
         RejectAttachments = {
             ["eft_mag_ak_x47_762_50"] = true,
         },
         Bone = "mod_magazine",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0.05, -0.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -1),
         Installed = "eft_mag_ak_pmag_762_30",
@@ -847,13 +847,13 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Mag", 
+        PrintName = "Magazine", 
         Category = "eft_ak_545_mag",
         RejectAttachments = {
             ["eft_mag_ak_6l31_545_60"] = true,
         },
         Bone = "mod_magazine",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0.15, -0.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -1),
         -- Installed = "eft_mag_ak_pmag_762_30",
@@ -872,13 +872,13 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Mag", 
+        PrintName = "Magazine", 
         Category = "eft_ak_556_mag",
         -- RejectAttachments = {
         --     ["eft_mag_ak_x47_762_50"] = true,
         -- },
         Bone = "mod_magazine",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0.15, -0.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -1),
         -- Installed = "eft_mag_ak_pmag_762_30",
