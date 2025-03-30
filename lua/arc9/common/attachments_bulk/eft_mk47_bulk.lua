@@ -213,8 +213,7 @@ if !ARC9EFT.AK_AnimsHook then
     
 ///////////////////////////////////////      eft_mag_ak_pmag_762_30
 
-
-ATT = {}
+local ATT = {} -- ??
 
 ATT.PrintName = "AK 7.62x39 Magpul PMAG 30 GEN M3 30-round magazine"
 ATT.CompactName = "GEN M3"
@@ -245,7 +244,7 @@ else -- if ak pack exists
     
 ///////////////////////////////////////      eft_mk47_conversion_545
 
-ATT = {}
+local ATT = {} -- ??
 
 ATT.PrintName = "Conversion to 5.45x39"
 ATT.CompactName = "5.45x39"
