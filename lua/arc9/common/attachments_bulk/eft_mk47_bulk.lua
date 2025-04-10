@@ -21,6 +21,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mk47_charge"}
 
+ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_mk47_charge_std")
 
 
@@ -164,6 +165,8 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_mk47_upper_std")
 

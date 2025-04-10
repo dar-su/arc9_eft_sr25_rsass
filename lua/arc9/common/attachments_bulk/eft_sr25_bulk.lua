@@ -142,5 +142,6 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_sr25_upper_std")
 
