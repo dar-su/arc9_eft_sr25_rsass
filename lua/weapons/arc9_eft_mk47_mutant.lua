@@ -899,6 +899,7 @@ SWEP.Attachments = {
     {
         PrintName = "Custom slot",
         Category = {"eft_custom_slot", "eft_custom_mk47"},
+        RejectAttachments = {["eft_extras_camos"] = true}, -- we have real camo support
         Bone = "weapon",
         Pos = Vector(0, 4, -2),
         Ang = Angle(0, -90, 0),
